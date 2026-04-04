@@ -1,7 +1,7 @@
 // Projects Section
 "use client"
 
-import { Project } from "@/types/projects";
+import { Project, ProjectSectionProps } from "@/types/projects";
 import { PROJECTS } from "@/lib/projects";
 import { useState } from "react";
 import { FaGithub } from "react-icons/fa";
@@ -9,8 +9,7 @@ import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-export function ProjectsSection() {
-    const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+export function ProjectsSection({ selectedProject, setSelectedProject }: ProjectSectionProps) {
     const featuredProjects = PROJECTS.filter((p) => p.featured);
     return (
         <section id="projects" className="py-28 px-6 bg-white/2">
