@@ -29,16 +29,13 @@ export function About() {
                 <div>
                     <span className="text-violet-400 text-sm uppercase tracking-widest">About Me</span>
                     <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-6 leading-tight">
-                        Crafting digital experiences with purpose
+                        Building real-world applications with clean architecture
                     </h2>
                     <p className="text-white/50 leading-relaxed mb-4">
-                        I'm a full-stack developer based in San Francisco with 5+ years of experience building web and mobile
-                        products. I love working at the intersection of design and engineering to create interfaces that are both
-                        beautiful and functional.
+                        I'm a full-stack developer focused on building scalable web applications with strong backend systems and clean architecture. I work primarily with Next.js, Django and FastAPI, creating applications that are both functional and easy to maintain.
                     </p>
                     <p className="text-white/50 leading-relaxed mb-8">
-                        When I'm not coding, you'll find me hiking the trails of Marin County, experimenting with film
-                        photography, or reading about system design.
+                        Recently, I've been developing projects like Allocare, a personal finance app that emphasizes structured budgeting and real-world usability. I'm continuously improving my skills by building, shipping, and refining practical applications.
                     </p>
                     <div className="grid grid-cols-2 gap-4">
                         {[
