@@ -1,9 +1,8 @@
 // Projects Section
 "use client"
 
-import { Project, ProjectSectionProps } from "@/types/projects";
+import { ProjectSectionProps } from "@/types/projects";
 import { PROJECTS } from "@/lib/projects";
-import { useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { ExternalLink, Play } from "lucide-react";
 import Image from "next/image";
@@ -66,7 +65,7 @@ export function ProjectsSection({ selectedProject, setSelectedProject }: Project
                                     )}
                                     {(project.live || project.video) && (
                                         <a
-                                            href={(project.live || project.video)}
+                                            href={(project.live || project.video) as string}
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="p-2 rounded-lg bg-white/5 hover:bg-white/10 text-white/40 hover:text-violet-400 transition-colors"

@@ -34,8 +34,7 @@ export function ContactSection() {
                                     <div>
                                         <div className="text-xs text-white/40 mb-1">Email</div>
                                         <div className="text-sm text-white/80 group-hover:text-violet-400 transition-colors">
-                                            sethnkwo@yahoo.com
-                                            sethnkwocool@gmail.com
+                                            sethnkwo@yahoo.com, sethnkwocool@gmail.com
                                         </div>
                                     </div>
                                 </div>

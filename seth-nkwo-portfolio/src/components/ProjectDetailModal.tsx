@@ -4,7 +4,6 @@
 import { X, ExternalLink, Tag, User, Calendar, Play } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 import { ProjectDetailModalProps } from "@/types/projects";
-import Link from "next/link";
 
 export function ProjectDetailModal({ project, onClose }: ProjectDetailModalProps) {
     if (!project) return null;
@@ -35,28 +34,30 @@ export function ProjectDetailModal({ project, onClose }: ProjectDetailModalProps
                             </div>
                             <div className="flex gap-3">
                                 {project.github && project.github !== "#" && (
-                                    <Link
+                                    <a
                                         href={project.github}
                                         target="_blank"
                                         className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 text-white/70 hover:text-white transition-colors text-sm"
                                     >
                                         <FaGithub size={16} />
                                         Code
-                                    </Link>
+                                    </a>
                                 )}
                                 {(project.live || project.video) && (
-                                    <Link
+                                    <a
                                         href={(project.live || project.video) as string}
                                         target="_blank"
+                                        rel="noopener noreferrer"
                                         className="flex items-center gap-2 px-4 py-2 rounded-lg bg-violet-600 hover:bg-violet-500 text-white transition-colors text-sm"
+                                        title={project.live ? "Live Demo" : "Watch Video"}
                                     >
                                         {project.live ? (
                                             <ExternalLink className="size-4" />
                                         ) : (
                                             <Play className="size-4" />
                                         )}
-                                        {project.live ? "Live Demo" : "Video Demo"}
-                                    </Link>
+                                        {project.live ? " Live Demo" : " Video Demo"}
+                                    </a>
                                 )}
                             </div>
                         </div>

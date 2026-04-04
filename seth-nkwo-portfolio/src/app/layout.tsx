@@ -17,6 +17,14 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Seth Nkwo Portfolio",
   description: "Seth Nkwo Personal Portfolio site",
+  // Favicon
+  icons: {
+    icon: [
+      { url: '/favicon.png' },
+      { url: '/favicon.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: { url: '/apple-touch-icon.png' },
+  },
 };
 
 export default function RootLayout({
