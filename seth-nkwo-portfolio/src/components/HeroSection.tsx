@@ -1,9 +1,15 @@
 // Hero Section
+"use client"
+
 import { FaGithub, FaLinkedin } from "react-icons/fa"
 import { Mail } from "lucide-react"
 import Link from "next/link"
 
 export function HeroSection() {
+    const scrollTo = (id: string) => {
+        document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    };
+
     return (
         <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
             <div className="absolute inset-0 pointer-events-none">
@@ -36,13 +42,13 @@ export function HeroSection() {
                 </p>
                 <div className="flex items-center justify-center gap-4 flex-wrap">
                     <button
-                        // onClick={() => scrollTo("projects")}
+                        onClick={() => scrollTo("projects")}
                         className="px-6 py-3 rounded-full bg-violet-600 hover:bg-violet-500 text-white text-sm transition-colors"
                     >
                         View My Work
                     </button>
                     <button
-                        // onClick={() => scrollTo("contact")}
+                        onClick={() => scrollTo("contact")}
                         className="px-6 py-3 rounded-full border border-white/15 hover:border-white/30 text-white/70 hover:text-white text-sm transition-all"
                     >
                         Get In Touch
