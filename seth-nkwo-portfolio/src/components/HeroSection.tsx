@@ -1,6 +1,7 @@
 // Hero Section
 import { FaGithub, FaLinkedin } from "react-icons/fa"
 import { Mail } from "lucide-react"
+import Link from "next/link"
 
 export function HeroSection() {
     return (
@@ -49,13 +50,13 @@ export function HeroSection() {
                 </div>
                 <div className="flex items-center justify-center gap-5 mt-10">
                     {[
-                        { icon: <FaGithub size={16} />, href: "#" },
-                        { icon: <FaLinkedin size={16} />, href: "#" },
-                        { icon: <Mail className="size-4" />, href: "#" },
+                        { icon: <FaGithub size={16} />, href: "https://github.com/sethnkwo8" },
+                        { icon: <FaLinkedin size={16} />, href: "https://www.linkedin.com/in/seth-nkwo" },
+                        { icon: <Mail className="size-4" />, href: "mailto:sethnkwo@yahoo.com" },
                     ].map((s, i) => (
-                        <a key={i} href={s.href} className="text-white/30 hover:text-violet-400 transition-colors">
+                        <Link key={i} href={s.href} className="text-white/30 hover:text-violet-400 transition-colors">
                             {s.icon}
-                        </a>
+                        </Link>
                     ))}
                 </div>
             </div>
