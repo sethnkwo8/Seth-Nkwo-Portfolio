@@ -9,7 +9,8 @@ export interface Project {
     image: string;
     tags: string[];
     github: string;
-    live: string;
+    live?: string;
+    video?: string;
     featured: boolean;
     category: string;
     year: string;

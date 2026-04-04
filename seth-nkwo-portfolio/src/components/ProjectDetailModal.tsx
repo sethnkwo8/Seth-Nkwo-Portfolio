@@ -1,9 +1,10 @@
 // Project Detail Modal
 "use client"
 
-import { X, ExternalLink, Tag, User, Calendar } from "lucide-react";
+import { X, ExternalLink, Tag, User, Calendar, Play } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 import { ProjectDetailModalProps } from "@/types/projects";
+import Link from "next/link";
 
 export function ProjectDetailModal({ project, onClose }: ProjectDetailModalProps) {
     if (!project) return null;
@@ -33,23 +34,32 @@ export function ProjectDetailModal({ project, onClose }: ProjectDetailModalProps
                                 <p className="text-violet-400 text-sm">{project.category}</p>
                             </div>
                             <div className="flex gap-3">
-                                <a
-                                    href={project.github}
-                                    className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 text-white/70 hover:text-white transition-colors text-sm"
-                                >
-                                    <FaGithub size={16} />
-                                    Code
-                                </a>
-                                <a
-                                    href={project.live}
-                                    className="flex items-center gap-2 px-4 py-2 rounded-lg bg-violet-600 hover:bg-violet-500 text-white transition-colors text-sm"
-                                >
-                                    <ExternalLink className="size-4" />
-                                    Live Demo
-                                </a>
+                                {project.github && project.github !== "#" && (
+                                    <Link
+                                        href={project.github}
+                                        target="_blank"
+                                        className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 text-white/70 hover:text-white transition-colors text-sm"
+                                    >
+                                        <FaGithub size={16} />
+                                        Code
+                                    </Link>
+                                )}
+                                {(project.live || project.video) && (
+                                    <Link
+                                        href={(project.live || project.video) as string}
+                                        target="_blank"
+                                        className="flex items-center gap-2 px-4 py-2 rounded-lg bg-violet-600 hover:bg-violet-500 text-white transition-colors text-sm"
+                                    >
+                                        {project.live ? (
+                                            <ExternalLink className="size-4" />
+                                        ) : (
+                                            <Play className="size-4" />
+                                        )}
+                                        {project.live ? "Live Demo" : "Video Demo"}
+                                    </Link>
+                                )}
                             </div>
                         </div>
-
                         <div className="grid sm:grid-cols-3 gap-4 mb-8">
                             <div className="flex items-center gap-2 text-sm">
                                 <Calendar className="size-4 text-violet-400" />

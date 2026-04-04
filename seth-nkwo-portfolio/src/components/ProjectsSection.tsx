@@ -5,7 +5,7 @@ import { Project, ProjectSectionProps } from "@/types/projects";
 import { PROJECTS } from "@/lib/projects";
 import { useState } from "react";
 import { FaGithub } from "react-icons/fa";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Play } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -53,22 +53,32 @@ export function ProjectsSection({ selectedProject, setSelectedProject }: Project
                                     >
                                         View Details
                                     </button>
-                                    <Link
-                                        href={project.github}
-                                        target="_blank"
-                                        className="p-2 rounded-lg bg-white/5 hover:bg-white/10 text-white/40 hover:text-white transition-colors"
-                                        title="View Code"
-                                    >
-                                        <FaGithub size={14} />
-                                    </Link>
-                                    <Link
-                                        href={project.live}
-                                        target="_blank"
-                                        className="p-2 rounded-lg bg-white/5 hover:bg-white/10 text-white/40 hover:text-violet-400 transition-colors"
-                                        title="Live Demo"
-                                    >
-                                        <ExternalLink className="size-3.5" />
-                                    </Link>
+                                    {project.github && project.github !== "#" && (
+                                        <a
+                                            href={project.github}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="p-2 rounded-lg bg-white/5 hover:bg-white/10 text-white/40 hover:text-white transition-colors"
+                                            title="View Code"
+                                        >
+                                            <FaGithub size={14} />
+                                        </a>
+                                    )}
+                                    {(project.live || project.video) && (
+                                        <a
+                                            href={(project.live || project.video)}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="p-2 rounded-lg bg-white/5 hover:bg-white/10 text-white/40 hover:text-violet-400 transition-colors"
+                                            title={project.live ? "Live Demo" : "Watch Video"}
+                                        >
+                                            {project.live ? (
+                                                <ExternalLink className="size-3.5" />
+                                            ) : (
+                                                <Play className="size-3.5" />
+                                            )}
+                                        </a>
+                                    )}
                                 </div>
                             </div>
                         </div>
