@@ -1,15 +1,19 @@
 // About section
+import Image from "next/image"
 
 export function About() {
     return (
         <section id="about" className="py-28 px-6">
             <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-16 items-center">
                 <div className="relative">
-                    <div className="aspect-square rounded-2xl overflow-hidden">
-                        <img
-                            src="https://images.unsplash.com/photo-1651684195895-38708dc94cfa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZXZlbG9wZXIlMjB3b3Jrc3BhY2UlMjBkZXNrfGVufDF8fHx8MTc3MjYwNDIyNXww&ixlib=rb-4.1.0&q=80&w=1080"
+                    <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl border border-white/5">
+                        <Image
+                            src="https://images.unsplash.com/photo-1651684195895-38708dc94cfa?..."
                             alt="workspace"
-                            className="w-full h-full object-cover"
+                            fill
+                            className="object-cover"
+                            // 3. Optimized sizes for a half-column layout
+                            sizes="(max-width: 768px) 100vw, 500px"
                         />
                     </div>
                     <div className="absolute -bottom-4 -right-4 bg-[#13131c] border border-white/10 rounded-xl p-4 flex items-center gap-3 shadow-xl">
