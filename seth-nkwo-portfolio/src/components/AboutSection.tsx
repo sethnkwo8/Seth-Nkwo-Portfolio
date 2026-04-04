@@ -1,7 +1,7 @@
 // About section
 import Image from "next/image"
 
-export function About() {
+export function AboutSection() {
     return (
         <section id="about" className="py-28 px-6">
             <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-16 items-center">
