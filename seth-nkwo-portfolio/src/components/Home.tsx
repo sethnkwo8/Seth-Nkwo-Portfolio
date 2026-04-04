@@ -7,8 +7,12 @@ import { ProjectsSection } from "./ProjectsSection"
 import { SkillsSection } from "./SkillsSection"
 import { ContactSection } from "./ContactSection"
 import { ProjectDetailModal } from "./ProjectDetailModal"
+import { useState } from "react"
+import { Project } from "@/types/projects"
 
 export function Home() {
+    // State for selected project
+    const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
     return (
         <>
@@ -17,7 +21,7 @@ export function Home() {
             {/* About Section */}
             <AboutSection />
             {/* Projects Section */}
-            <ProjectsSection />
+            <ProjectsSection selectedProject={selectedProject} setSelectedProject={setSelectedProject} />
             {/* Skills Section */}
             <SkillsSection />
             {/* Contact Section */}
