@@ -6,6 +6,7 @@ import { PROJECTS } from "@/lib/projects";
 import { useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { ExternalLink } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export function ProjectsSection() {
@@ -25,10 +26,12 @@ export function ProjectsSection() {
                             className="group bg-[#0f0f18] border border-white/5 rounded-2xl overflow-hidden hover:border-violet-500/30 transition-all duration-300"
                         >
                             <div className="aspect-video overflow-hidden">
-                                <img
+                                <Image
                                     src={project.image}
                                     alt={project.title}
-                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                    width={1080}
+                                    height={720}
+                                    className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
                                 />
                             </div>
                             <div className="p-5">
@@ -51,20 +54,22 @@ export function ProjectsSection() {
                                     >
                                         View Details
                                     </button>
-                                    <a
+                                    <Link
                                         href={project.github}
+                                        target="_blank"
                                         className="p-2 rounded-lg bg-white/5 hover:bg-white/10 text-white/40 hover:text-white transition-colors"
                                         title="View Code"
                                     >
                                         <FaGithub size={14} />
-                                    </a>
-                                    <a
+                                    </Link>
+                                    <Link
                                         href={project.live}
+                                        target="_blank"
                                         className="p-2 rounded-lg bg-white/5 hover:bg-white/10 text-white/40 hover:text-violet-400 transition-colors"
                                         title="Live Demo"
                                     >
                                         <ExternalLink className="size-3.5" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
