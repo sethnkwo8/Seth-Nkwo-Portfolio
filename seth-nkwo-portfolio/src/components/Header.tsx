@@ -4,7 +4,7 @@
 import Link from "next/link"
 import { X, Menu } from "lucide-react"
 import { NAV_LINKS } from "@/lib/navlinks"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { usePathname } from "next/navigation"
 
 export function Header() {
@@ -19,6 +19,15 @@ export function Header() {
 
     // State for scrolled
     const [scrolled, setScrolled] = useState(false);
+
+    // useEffect for scroll change
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 20);
+        };
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
     // Function to handle nav click
     const handleNavClick = (href: string) => {
