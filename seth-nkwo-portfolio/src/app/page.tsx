@@ -1,6 +1,7 @@
 // Home Page
-import { About } from "@/components/About";
+import { About } from "@/components/AboutSection";
 import { HeroSection } from "@/components/HeroSection";
+import { SkillsSection } from "@/components/SkillsSection";
 
 export default function HomePage() {
   return (
@@ -9,6 +10,8 @@ export default function HomePage() {
       <HeroSection />
       {/* About Section */}
       <About />
+      {/* Skills Section */}
+      <SkillsSection />
     </>
   )
 }
