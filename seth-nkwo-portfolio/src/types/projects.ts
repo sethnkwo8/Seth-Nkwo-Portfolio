@@ -15,3 +15,9 @@ export interface Project {
     challenges?: string[];
     outcomes?: string[];
 }
+
+// Interface for Project Detail Modal props
+export interface ProjectDetailModalProps {
+    project: Project | null;
+    onClose: () => void;
+}
