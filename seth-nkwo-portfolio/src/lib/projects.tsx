@@ -13,7 +13,7 @@ export const PROJECTS: Project[] = [
         live: "#",
         featured: true,
         category: "Web Application",
-        year: "2025",
+        year: "2026",
         role: "Lead Developer",
         challenges: [
         ],
@@ -45,7 +45,7 @@ export const PROJECTS: Project[] = [
         live: "https://www.bondexbridgeterminal.com",
         featured: true,
         category: "Web Application",
-        year: "2025",
+        year: "2026",
         role: "Lead Developer",
         challenges: [
         ],
@@ -75,7 +75,7 @@ export const PROJECTS: Project[] = [
         tags: ["Django", "Django REST Framework", "PostgreSQL", "SimpleJWT"],
         github: "https://github.com/sethnkwo8/Task-Manager-API",
         featured: false,
-        category: "Web Application",
+        category: "REST API",
         year: "2025",
         role: "Lead Developer",
         challenges: [
@@ -107,7 +107,7 @@ export const PROJECTS: Project[] = [
         github: "https://github.com/sethnkwo8/TradeCalc",
         video: "https://youtu.be/oBtbOppqQcg",
         featured: false,
-        category: "Web Application",
+        category: "Desktop App",
         year: "2025",
         role: "Lead Developer",
         challenges: [
