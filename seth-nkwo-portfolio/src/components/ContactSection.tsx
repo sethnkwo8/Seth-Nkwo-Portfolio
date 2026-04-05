@@ -24,7 +24,7 @@ export function ContactSection() {
                         <h3 className="text-lg font-semibold text-white mb-6">Get In Touch</h3>
                         <div className="grid sm:grid-cols-2 gap-4">
                             <a
-                                href="mailto:alex@example.com"
+                                href="mailto:sethnkwo@yahoo.com"
                                 className="group bg-[#0f0f18] border border-white/5 rounded-xl p-5 hover:border-violet-500/30 transition-all"
                             >
                                 <div className="flex items-start gap-4">
@@ -51,7 +51,8 @@ export function ContactSection() {
                                     <div>
                                         <div className="text-xs text-white/40 mb-1">Phone</div>
                                         <div className="text-sm text-white/80 group-hover:text-violet-400 transition-colors">
-                                            +234 7073845982
+                                            <p>+234 7073845982</p>
+                                            <p>+234 8097571370</p>
                                         </div>
                                     </div>
                                 </div>
@@ -85,20 +86,20 @@ export function ContactSection() {
                         <div className="bg-[#0f0f18] border border-white/5 rounded-xl p-5 mt-6">
                             <div className="text-sm text-white/60 mb-3">Connect on social media</div>
                             <div className="flex items-center gap-3">
-                                <Link
-                                    href="#"
+                                <a
+                                    href="https://github.com/sethnkwo8"
                                     className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 text-white/70 hover:text-white transition-colors text-sm"
                                 >
                                     <FaGithub size={16} />
                                     GitHub
-                                </Link>
-                                <Link
-                                    href="#"
+                                </a>
+                                <a
+                                    href="https://www.linkedin.com/in/seth-nkwo/"
                                     className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 text-white/70 hover:text-white transition-colors text-sm"
                                 >
                                     <FaLinkedin size={16} />
                                     LinkedIn
-                                </Link>
+                                </a>
                             </div>
                         </div>
                     </div>
