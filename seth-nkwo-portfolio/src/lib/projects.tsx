@@ -5,17 +5,22 @@ export const PROJECTS: Project[] = [
     {
         id: "allocare",
         title: "Allocare",
-        description: "A full-stack budgeting and allocation platform that helps people make intentional decisions with their income.",
-        fullDescription: "Allocare is a modern personal finance management application designed to help users track income, manage expenses, and optimize budget allocation using a structured approach. ",
+        description: "A high-performance financial engine that orchestrates income allocation through secure, stateless architecture and asynchronous processing.",
+        fullDescription: "Allocare is a comprehensive personal finance application built to bridge the gap between passive tracking and intentional budgeting. By utilizing a decoupled Next.js 14 and FastAPI architecture, the platform provides real-time insights into budget allocations (Needs, Wants, Savings) while maintaining strict security and zero-latency user experiences.",
         image: "/projects/allocare.png",
-        tags: ["Next.js", "TypeScript", "FastAPI", "PostgreSQL"],
+        tags: ["Next.js 14", "FastAPI", "PostgreSQL", "SQLModel", "Resend API"],
         github: "https://github.com/sethnkwo8/Allocare",
         live: "https://www.allocare.online/",
         featured: true,
-        category: "Web Application",
+        category: "Full-Stack Web Application",
         year: "2026",
         role: "Lead Developer",
         challenges: [
+            "Solved cross-domain authentication drops on mobile Safari by engineering a custom cookie strategy to navigate Intelligent Tracking Prevention (ITP) constraints[cite: 31, 32].",
+            "Eliminated API latency during onboarding by offloading transactional email delivery to FastAPI BackgroundTasks via the Resend API[cite: 31, 32, 45].",
+            "Implemented a stateless password recovery system using cryptographically signed tokens (itsdangerous), reducing database bloat and enhancing security[cite: 31, 58].",
+            "Architected a strictly typed, decoupled infrastructure between a Vercel-hosted frontend and a Railway-hosted FastAPI backend[cite: 3, 31, 32, 44].",
+            "Developed a multi-step state machine in Next.js to handle complex user onboarding and currency configuration before final database persistence[cite: 31, 55, 60]."
         ],
     },
     {
