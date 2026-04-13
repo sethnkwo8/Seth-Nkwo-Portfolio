@@ -16,11 +16,11 @@ export const PROJECTS: Project[] = [
         year: "2026",
         role: "Lead Developer",
         challenges: [
-            "Solved cross-domain authentication drops on mobile Safari by engineering a custom cookie strategy to navigate Intelligent Tracking Prevention (ITP) constraints[cite: 31, 32].",
-            "Eliminated API latency during onboarding by offloading transactional email delivery to FastAPI BackgroundTasks via the Resend API[cite: 31, 32, 45].",
-            "Implemented a stateless password recovery system using cryptographically signed tokens (itsdangerous), reducing database bloat and enhancing security[cite: 31, 58].",
-            "Architected a strictly typed, decoupled infrastructure between a Vercel-hosted frontend and a Railway-hosted FastAPI backend[cite: 3, 31, 32, 44].",
-            "Developed a multi-step state machine in Next.js to handle complex user onboarding and currency configuration before final database persistence[cite: 31, 55, 60]."
+            "Solved cross-domain authentication drops on mobile Safari by engineering a custom cookie strategy to navigate Intelligent Tracking Prevention (ITP) constraints.",
+            "Eliminated API latency during onboarding by offloading transactional email delivery to FastAPI BackgroundTasks via the Resend API.",
+            "Implemented a stateless password recovery system using cryptographically signed tokens (itsdangerous), reducing database bloat and enhancing security.",
+            "Architected a strictly typed, decoupled infrastructure between a Vercel-hosted frontend and a Railway-hosted FastAPI backend.",
+            "Developed a multi-step state machine in Next.js to handle complex user onboarding and currency configuration before final database persistence."
         ],
     },
     {
