@@ -10,7 +10,7 @@ export const PROJECTS: Project[] = [
         image: "/projects/allocare.png",
         tags: ["Next.js", "TypeScript", "FastAPI", "PostgreSQL"],
         github: "https://github.com/sethnkwo8/Allocare",
-        live: "#",
+        live: "https://www.allocare.online/",
         featured: true,
         category: "Web Application",
         year: "2026",
