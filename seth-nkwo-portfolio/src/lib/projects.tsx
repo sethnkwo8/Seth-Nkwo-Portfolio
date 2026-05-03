@@ -33,7 +33,7 @@ export const PROJECTS: Project[] = [
         github: "https://github.com/sethnkwo8/Gameday-Stats",
         video: "https://youtu.be/bofClOn7viM",
         featured: true,
-        category: "Web Application",
+        category: "Full-Stack Web Application",
         year: "2025",
         role: "Lead Developer",
         challenges: [
@@ -65,7 +65,7 @@ export const PROJECTS: Project[] = [
         github: "https://github.com/sethnkwo8/Student-Accommodation",
         video: "https://youtu.be/KalpQyaUkQg",
         featured: false,
-        category: "Web Application",
+        category: "Full-Stack Web Application",
         year: "2025",
         role: "Lead Developer",
         challenges: [
@@ -118,7 +118,7 @@ export const PROJECTS: Project[] = [
         github: "https://github.com/sethnkwo8/GymTroll",
         video: "https://youtu.be/D919CVIKqnA",
         featured: false,
-        category: "Web Application",
+        category: "Full-Stack Web Application",
         year: "2025",
         role: "Lead Developer",
         challenges: [
