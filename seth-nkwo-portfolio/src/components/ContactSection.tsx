@@ -2,7 +2,6 @@
 "use client"
 
 import { Mail, Phone, MapPin, Clock } from "lucide-react"
-import Link from "next/link"
 import { FaGithub, FaLinkedin } from "react-icons/fa"
 
 export function ContactSection() {
@@ -11,9 +10,9 @@ export function ContactSection() {
             <div className="max-w-6xl mx-auto">
                 <div className="text-center mb-16">
                     <span className="text-violet-400 text-sm uppercase tracking-widest">Contact</span>
-                    <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4">Let's Work Together</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4">Let&apos;s Work Together</h2>
                     <p className="text-white/40 mb-10 leading-relaxed">
-                        Have a project in mind? My inbox is always open. I'll get back to you within 24
+                        Have a project in mind? My inbox is always open. I&apos;ll get back to you within 24
                         hours.
                     </p>
                 </div>

@@ -27,7 +27,7 @@ export function AboutSection() {
                     </div>
                     <div className="absolute -top-4 -left-4 bg-[#13131c] border border-white/10 rounded-xl p-4 shadow-xl">
                         <div className="text-xs text-white/40 mb-0.5">Projects Done</div>
-                        <div className="text-xl font-bold text-white">16+</div>
+                        <div className="text-xl font-bold text-white">17+</div>
                     </div>
                 </div>
                 <div>
@@ -36,10 +36,10 @@ export function AboutSection() {
                         Building real-world applications with clean architecture
                     </h2>
                     <p className="text-white/50 leading-relaxed mb-4">
-                        I'm a full-stack developer focused on building scalable web applications with strong backend systems and clean architecture. I work primarily with Next.js, Django and FastAPI, creating applications that are both functional and easy to maintain.
+                        I&apos;m a full-stack developer focused on building scalable web applications with strong backend systems and clean architecture. I work primarily with Next.js, Django and FastAPI, creating applications that are both functional and easy to maintain.
                     </p>
                     <p className="text-white/50 leading-relaxed mb-8">
-                        Recently, I've been developing projects like Allocare, a personal finance app that emphasizes structured budgeting and real-world usability. I'm continuously improving my skills by building, shipping, and refining practical applications.
+                        Recently, I&apos;ve been developing projects like Allocare, a personal finance app that emphasizes structured budgeting and real-world usability. I&apos;m continuously improving my skills by building, shipping, and refining practical applications.
                     </p>
                     <div className="grid grid-cols-2 gap-4">
                         {[

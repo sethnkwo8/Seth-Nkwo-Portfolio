@@ -31,7 +31,7 @@ export function HeroSection() {
                     Available for freelance work
                 </div>
                 <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 leading-tight">
-                    Hi, I'm{" "}
+                    Hi, I&apos;m{" "}
                     <span className="bg-linear-to-r from-violet-400 to-indigo-400 bg-clip-text text-transparent">
                         Seth Nkwo
                     </span>
