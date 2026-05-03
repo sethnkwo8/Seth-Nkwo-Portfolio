@@ -72,6 +72,28 @@ export const PROJECTS: Project[] = [
         ],
     },
     {
+        id: "personal-finance-api",
+        title: "Personal Finance API",
+        description: "API Personal Finance Project using Node.js, MongoDB + TypeScript",
+        fullDescription: "A RESTful API for managing personal finances, built with Node.js, Express, TypeScript, and MongoDB. Includes authentication, expense tracking, filtering, pagination, and structured error handling.",
+        image: "/projects/task-manager.png",
+        tags: ["Node.js (Express)", "MongoDB", "TypeScript", "JWT authentication"],
+        github: "https://github.com/sethnkwo8/Personal-Finance-API",
+        featured: false,
+        category: "REST API",
+        year: "2026",
+        role: "Lead Developer",
+        challenges: [
+            "Designing a scalable filtering and pagination system that supports multiple query parameters (category, amount range, date range) while maintaining performance.",
+            "Handling MongoDB ObjectId conversions safely between TypeScript types and Mongoose queries to prevent runtime errors.",
+            "Implementing secure JWT authentication and ensuring protected routes correctly attach and validate user identity.",
+            "Structuring the project using a clean architecture (controllers, services, models) to separate concerns and improve maintainability.",
+            "Creating a centralized error handling system to manage validation, authentication, and database errors consistently.",
+            "Ensuring user-specific data isolation so users can only access and modify their own expenses.",
+            "Balancing type safety with flexibility when integrating TypeScript with Mongoose schemas and query results."
+        ]
+    },
+    {
         id: "task-manager-api",
         title: "Task Manager API",
         description: "API Task Manager Project using Django's REST Framework",
