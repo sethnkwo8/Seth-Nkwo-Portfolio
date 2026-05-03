@@ -21,12 +21,12 @@ export function SkillsSection() {
                         {
                             category: "Backend",
                             icon: <Server className="size-5" />,
-                            items: ["Python", "Django", "Flask", "FastAPI", "Node.js (Learning)", "REST APIs"],
+                            items: ["Python", "Django", "Flask", "FastAPI", "Node.js (Express)", "REST APIs"],
                         },
                         {
                             category: "Databases & ORM",
                             icon: <Database className="size-5" />,
-                            items: ["PostgreSQL", "SQLite", "Prisma", "SQLModel"],
+                            items: ["PostgreSQL", "SQLite", "MongoDB", "Prisma", "SQLModel"],
                         },
                         {
                             category: "Tools",
