@@ -75,7 +75,7 @@ export const PROJECTS: Project[] = [
         id: "personal-finance-api",
         title: "Personal Finance API",
         description: "API Personal Finance Project using Node.js, MongoDB + TypeScript",
-        fullDescription: "A RESTful API for managing personal finances, built with Node.js, Express, TypeScript, and MongoDB. Includes authentication, expense tracking, filtering, pagination, and structured error handling.",
+        fullDescription: "A production-ready RESTful API for managing personal finances, built with Node.js, Express, TypeScript, and MongoDB. This project demonstrates modern backend engineering practices including authentication, security, validation, testing, and performance optimization",
         image: "/projects/personal-finance.png",
         tags: ["Node.js (Express)", "MongoDB", "TypeScript", "JWT authentication", "Jest"],
         github: "https://github.com/sethnkwo8/Personal-Finance-API",
