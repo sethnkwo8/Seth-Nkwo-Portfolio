@@ -8,7 +8,7 @@ export const PROJECTS: Project[] = [
         description: "A high-performance financial engine that orchestrates income allocation through secure, stateless architecture and asynchronous processing.",
         fullDescription: "Allocare is a comprehensive personal finance application built to bridge the gap between passive tracking and intentional budgeting. By utilizing a decoupled Next.js and FastAPI architecture, the platform provides real-time insights into budget allocations (Needs, Wants, Savings) while maintaining strict security and zero-latency user experiences.",
         image: "/projects/allocare.png",
-        tags: ["Next.js", "FastAPI", "PostgreSQL", "SQLModel", "Resend API"],
+        tags: ["Next.js", "FastAPI", "PostgreSQL", "Supabase", "Render", "SQLModel", "Resend API"],
         github: "https://github.com/sethnkwo8/Allocare",
         live: "https://www.allocare.online/",
         featured: true,

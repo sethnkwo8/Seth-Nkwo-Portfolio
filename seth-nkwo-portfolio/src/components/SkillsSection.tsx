@@ -26,7 +26,7 @@ export function SkillsSection() {
                         {
                             category: "Databases & ORM",
                             icon: <Database className="size-5" />,
-                            items: ["PostgreSQL", "SQLite", "MongoDB", "Prisma", "SQLModel"],
+                            items: ["PostgreSQL", "SQLite", "MongoDB", "Supabase", "Prisma", "SQLModel"],
                         },
                         {
                             category: "Tools",
