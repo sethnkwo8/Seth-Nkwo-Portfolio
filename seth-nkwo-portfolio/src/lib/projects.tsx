@@ -3,6 +3,38 @@ import { Project } from "@/types/projects";
 // Projects data
 export const PROJECTS: Project[] = [
     {
+        id: "applysmart",
+        title: "ApplySmart",
+        description: "An AI-powered resume optimization platform designed to improve ATS compatibility through secure authentication architecture and intelligent job-description matching.",
+        fullDescription: "ApplySmart is a production-style SaaS platform focused on helping job seekers optimize resumes for Applicant Tracking Systems (ATS). The application combines a decoupled Next.js and Express.js architecture with secure JWT authentication, Google OAuth integration, drag-and-drop resume ingestion, and AI-ready optimization pipelines. The platform was engineered with scalability and modern SaaS infrastructure principles in mind, emphasizing secure session persistence, modular architecture, and future AI workflow integration.",
+        image: "/projects/applysmart.png",
+        tags: [
+            "Next.js",
+            "TypeScript",
+            "Express.js",
+            "MongoDB",
+            "JWT",
+            "Google OAuth",
+            "Zustand",
+            "Tailwind CSS",
+            "Vercel"
+        ],
+        github: "https://github.com/sethnkwo8/ApplySmart",
+        live: "https://apply-smart-six.vercel.app",
+        featured: true,
+        category: "AI SaaS Platform",
+        year: "2026",
+        role: "Lead Developer",
+        challenges: [
+            "Engineered a production-style authentication architecture using short-lived JWT access tokens and HTTP-only refresh token cookies to avoid insecure localStorage token persistence.",
+            "Implemented multi-provider authentication with automatic Google OAuth account linking based on email identity reconciliation.",
+            "Built centralized frontend authentication state management using Zustand, including automatic auth hydration and refresh token synchronization.",
+            "Designed a drag-and-drop resume ingestion system supporting PDF, DOCX, and TXT uploads while preparing the infrastructure for future AI parsing pipelines.",
+            "Architected a fully decoupled Next.js frontend and Express.js backend system to improve scalability, maintainability, and deployment flexibility.",
+            "Developed protected optimization workflows and session-aware frontend routing to secure access to ATS analysis tooling."
+        ],
+    },
+    {
         id: "allocare",
         title: "Allocare",
         description: "A high-performance financial engine that orchestrates income allocation through secure, stateless architecture and asynchronous processing.",
@@ -48,7 +80,7 @@ export const PROJECTS: Project[] = [
         tags: ["Next.js", "Tailwind CSS", "Vercel", "Cloudflare"],
         github: "https://github.com/sethnkwo8/Bondex-Bridge",
         live: "https://www.bondexbridgeterminal.com",
-        featured: true,
+        featured: false,
         category: "Web Application",
         year: "2026",
         role: "Lead Developer",

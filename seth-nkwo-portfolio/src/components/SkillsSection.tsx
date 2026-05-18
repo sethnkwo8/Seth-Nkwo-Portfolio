@@ -1,7 +1,6 @@
 // Skills section
 
-import { Database, Server, Settings } from "lucide-react";
-import { FaReact } from "react-icons/fa";
+import { skills } from "@/lib/skills";
 
 export function SkillsSection() {
     return (
@@ -12,28 +11,7 @@ export function SkillsSection() {
                     <h2 className="text-3xl md:text-4xl font-bold mt-2">Skills & Technologies</h2>
                 </div>
                 <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-                    {[
-                        {
-                            category: "Frontend",
-                            icon: <FaReact size={20} />,
-                            items: ["Next.js", "React", "TypeScript", "Tailwind CSS", "HTML/CSS"],
-                        },
-                        {
-                            category: "Backend",
-                            icon: <Server className="size-5" />,
-                            items: ["Python", "Django", "Flask", "FastAPI", "Node.js (Express)", "REST APIs"],
-                        },
-                        {
-                            category: "Databases & ORM",
-                            icon: <Database className="size-5" />,
-                            items: ["PostgreSQL", "SQLite", "MongoDB", "Supabase", "Prisma", "SQLModel"],
-                        },
-                        {
-                            category: "Tools",
-                            icon: <Settings className="size-5" />,
-                            items: ["Git", "Figma", "Postman", "Github Actions", "Docker (Learning)", "AWS (Learning)"],
-                        },
-                    ].map((skill) => (
+                    {skills.map((skill) => (
                         <div
                             key={skill.category}
                             className="bg-[#0f0f18] border border-white/5 rounded-2xl p-6 hover:border-violet-500/20 transition-colors"
