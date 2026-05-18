@@ -18,7 +18,7 @@ export function AboutSection() {
                     </div>
                     <div className="absolute -bottom-4 -right-4 bg-[#13131c] border border-white/10 rounded-xl p-4 flex items-center gap-3 shadow-xl">
                         <div className="w-10 h-10 rounded-full bg-violet-600/20 flex items-center justify-center text-violet-400 text-lg font-bold">
-                            3+
+                            4+
                         </div>
                         <div>
                             <div className="text-xs text-white/40">Years of</div>
@@ -27,7 +27,7 @@ export function AboutSection() {
                     </div>
                     <div className="absolute -top-4 -left-4 bg-[#13131c] border border-white/10 rounded-xl p-4 shadow-xl">
                         <div className="text-xs text-white/40 mb-0.5">Projects Done</div>
-                        <div className="text-xl font-bold text-white">17+</div>
+                        <div className="text-xl font-bold text-white">21+</div>
                     </div>
                 </div>
                 <div>
