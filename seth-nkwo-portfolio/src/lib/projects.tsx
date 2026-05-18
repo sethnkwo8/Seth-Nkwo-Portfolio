@@ -4,7 +4,7 @@ import { Project } from "@/types/projects";
 export const PROJECTS: Project[] = [
     {
         id: "applysmart",
-        title: "ApplySmart",
+        title: "ApplySmart (In Development)",
         description: "An AI-powered resume optimization platform designed to improve ATS compatibility through secure authentication architecture and intelligent job-description matching.",
         fullDescription: "ApplySmart is a production-style SaaS platform focused on helping job seekers optimize resumes for Applicant Tracking Systems (ATS). The application combines a decoupled Next.js and Express.js architecture with secure JWT authentication, Google OAuth integration, drag-and-drop resume ingestion, and AI-ready optimization pipelines. The platform was engineered with scalability and modern SaaS infrastructure principles in mind, emphasizing secure session persistence, modular architecture, and future AI workflow integration.",
         image: "/projects/applysmart.png",
