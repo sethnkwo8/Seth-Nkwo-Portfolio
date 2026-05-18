@@ -58,10 +58,19 @@ export const PROJECTS: Project[] = [
     {
         id: "gameday-stats",
         title: "Gameday Stats",
-        description: "Django web application that gives you updated match results, standings, info and player details for Europe's top 5 football leagues.",
-        fullDescription: "Gameday Stats is a full-stack web application built with Django that provides live football (soccer) data — including fixtures, scores, standings, and player statistics — for the top five European leagues",
+        description: "A full-stack football statistics platform delivering live fixtures, standings, player statistics, and automated sports data updates across Europe’s top five leagues.",
+        fullDescription: "Gameday Stats is a full-stack sports analytics platform built with Django that aggregates and displays live football data across the Premier League, La Liga, Serie A, Bundesliga, and Ligue 1. The application integrates multiple football APIs to provide real-time fixtures, league standings, team information, and player statistics while leveraging GitHub Actions for automated scheduled data synchronization. Developed as the final project for Harvard’s CS50 Web Programming course, the platform demonstrates large-scale API integration, backend automation workflows, relational database design, and production-style deployment architecture.",
         image: "/projects/gameday-stats.png",
-        tags: ["JavaScript", "Django", "Render", "PostgreSQL", "External APIs"],
+        tags: [
+            "Django",
+            "Python",
+            "PostgreSQL",
+            "Bootstrap",
+            "JavaScript",
+            "API Integration",
+            "GitHub Actions",
+            "Render"
+        ],
         github: "https://github.com/sethnkwo8/Gameday-Stats",
         video: "https://youtu.be/bofClOn7viM",
         featured: true,
@@ -69,7 +78,14 @@ export const PROJECTS: Project[] = [
         year: "2025",
         role: "Lead Developer",
         challenges: [
+            "Integrated multiple football data providers (API-Football and Football-Data.org) while designing a unified backend structure for fixtures, standings, player statistics, and historical match data.",
+            "Engineered automated sports data synchronization workflows using GitHub Actions as an alternative to Celery and Redis due to deployment limitations on Render’s free hosting tier.",
+            "Designed and optimized relational PostgreSQL models to efficiently manage leagues, clubs, players, fixtures, standings, and statistics across multiple competitions.",
+            "Built scheduled background update pipelines using custom Django management commands to periodically refresh football data without manual intervention.",
+            "Implemented responsive sports dashboards and league navigation systems using Bootstrap and custom frontend styling for cross-device usability.",
+            "Architected a scalable backend system capable of handling continuously updating sports data while minimizing redundant API requests and maintaining data consistency."
         ],
+
     },
     {
         id: "bondex-bridge",
