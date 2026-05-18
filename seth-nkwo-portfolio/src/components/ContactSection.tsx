@@ -87,6 +87,7 @@ export function ContactSection() {
                             <div className="flex items-center gap-3">
                                 <a
                                     href="https://github.com/sethnkwo8"
+                                    target="_blank"
                                     className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 text-white/70 hover:text-white transition-colors text-sm"
                                 >
                                     <FaGithub size={16} />
@@ -94,6 +95,7 @@ export function ContactSection() {
                                 </a>
                                 <a
                                     href="https://www.linkedin.com/in/seth-nkwo/"
+                                    target="_blank"
                                     className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 text-white/70 hover:text-white transition-colors text-sm"
                                 >
                                     <FaLinkedin size={16} />

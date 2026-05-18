@@ -60,7 +60,7 @@ export function HeroSection() {
                         { icon: <FaLinkedin size={16} />, href: "https://www.linkedin.com/in/seth-nkwo" },
                         { icon: <Mail className="size-4" />, href: "mailto:sethnkwo@yahoo.com" },
                     ].map((s, i) => (
-                        <Link key={i} href={s.href} className="text-white/30 hover:text-violet-400 transition-colors">
+                        <Link key={i} href={s.href} target="_blank" className="text-white/30 hover:text-violet-400 transition-colors">
                             {s.icon}
                         </Link>
                     ))}
