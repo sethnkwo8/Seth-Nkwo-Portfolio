@@ -4,7 +4,7 @@ import { Project } from "@/types/projects";
 export const PROJECTS: Project[] = [
     {
         id: "applysmart",
-        title: "ApplySmart (In Development)",
+        title: "ApplySmart",
         description: "An AI-powered resume optimization platform designed to improve ATS compatibility through secure authentication architecture and intelligent job-description matching.",
         fullDescription: "ApplySmart is a production-style SaaS platform focused on helping job seekers optimize resumes for Applicant Tracking Systems (ATS). The application combines a decoupled Next.js and Express.js architecture with secure JWT authentication, Google OAuth integration, drag-and-drop resume ingestion, and AI-ready optimization pipelines. The platform was engineered with scalability and modern SaaS infrastructure principles in mind, emphasizing secure session persistence, modular architecture, and future AI workflow integration.",
         image: "/projects/applysmart.png",
@@ -20,18 +20,18 @@ export const PROJECTS: Project[] = [
             "Vercel"
         ],
         github: "https://github.com/sethnkwo8/ApplySmart",
-        live: "https://apply-smart-six.vercel.app",
+        live: "https://applysmart.sethnkwo.space",
         featured: true,
         category: "AI SaaS Platform",
         year: "2026",
         role: "Lead Developer",
         challenges: [
-            "Engineered a production-style authentication architecture using short-lived JWT access tokens and HTTP-only refresh token cookies to avoid insecure localStorage token persistence.",
-            "Implemented multi-provider authentication with automatic Google OAuth account linking based on email identity reconciliation.",
-            "Built centralized frontend authentication state management using Zustand, including automatic auth hydration and refresh token synchronization.",
-            "Designed a drag-and-drop resume ingestion system supporting PDF, DOCX, and TXT uploads while preparing the infrastructure for future AI parsing pipelines.",
-            "Architected a fully decoupled Next.js frontend and Express.js backend system to improve scalability, maintainability, and deployment flexibility.",
-            "Developed protected optimization workflows and session-aware frontend routing to secure access to ATS analysis tooling."
+            "Mitigated XSS and token-jacking vulnerabilities by engineering an isolated authentication architecture utilizing short-lived JWT access tokens alongside long-lived, strict HttpOnly cookie refresh arrays.",
+            "Architected a cross-provider identity reconciliation system that transparently handles multi-provider authentication, automatically linking traditional email registries and Google OAuth accounts on identical address profiles without data fragmentation.",
+            "Eliminated client-side hydration lag and synchronized token refresh intervals by structuring a centralized, decoupled global state management store using Zustand.",
+            "Designed a secure, fault-tolerant resume ingestion pipeline using a Multer memory-storage engine to restrict incoming file buffering strictly within RAM, avoiding local disk exposure during asynchronous text extraction.",
+            "Orchestrated a low-latency AI optimization pipeline integrating gemini-2.5-flash with native JSON schema enforcement, mapping missing semantic tech proficiencies directly to custom aggregated database learning paths.",
+            "Designed a scalable identity-based request throttling guard using express-rate-limit to safeguard downstream LLM resource pipelines, using authenticated database object tracking instead of unstable IP-based metrics."
         ],
     },
     {
