@@ -20,9 +20,9 @@ export const skills =
             items: ["PostgreSQL", "SQLite", "MongoDB", "Supabase", "Prisma", "SQLModel"],
         },
         {
-            category: "Tools",
+            category: "DevOps & Infrastructure Tools",
             icon: <Settings className="size-5" />,
-            items: ["Git", "Figma", "Postman", "Github Actions", "Docker (Learning)", "AWS (Learning)"],
+            items: ["Docker", "Docker Compose", "Linux / Terminal", "GitHub Actions", "Git / GitHub", "Postman", "AWS (Learning)"],
         },
         {
             category: "Authentication & Security",
