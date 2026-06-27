@@ -36,10 +36,10 @@ export function AboutSection() {
                         Building real-world applications with clean architecture
                     </h2>
                     <p className="text-white/50 leading-relaxed mb-4">
-                        I&apos;m a full-stack developer focused on building scalable web applications with strong backend systems and clean architecture. I work primarily with Next.js, Django and FastAPI, creating applications that are both functional and easy to maintain.
+                        I am a Full-Stack Engineer dedicated to architecting scalable web ecosystems with robust backend architectures, tight security boundaries, and resilient deployment pipelines. Specializing in Next.js, FastAPI, and Node.js, I bridge the gap between high-fidelity user experiences and production-grade cloud stability.
                     </p>
                     <p className="text-white/50 leading-relaxed mb-8">
-                        Recently, I&apos;ve been developing projects like Allocare, a personal finance app that emphasizes structured budgeting and real-world usability. I&apos;m continuously improving my skills by building, shipping, and refining practical applications.
+                        Recently, I engineered platforms like Allocare and ApplySmart—tackling complex architectural challenges like multi-container Docker orchestration, fine-grained access control pipelines, and multi-region network routing configurations. I don&apos;t just build features; I ship resilient systems engineered for long-term reliability.
                     </p>
                     <div className="grid grid-cols-2 gap-4">
                         {[
