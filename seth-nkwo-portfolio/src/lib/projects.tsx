@@ -9,6 +9,7 @@ export const PROJECTS: Project[] = [
         fullDescription: "ApplySmart is an enterprise-grade SaaS platform engineered to help job seekers optimize resumes against target job descriptions in real time. The platform combines a decoupled Next.js and Express.js architecture with secure multi-provider JWT/OAuth authentication pipelines, drag-and-drop file ingestion, and automated multi-container developer environments orchestrated through Docker Compose.",
         image: "/projects/applysmart.png",
         tags: [
+            "AWS (EC2, S3, IAM)",
             "Node.js (Express)",
             "Next.js",
             "TypeScript",
@@ -42,6 +43,7 @@ export const PROJECTS: Project[] = [
         fullDescription: "Allocare is a comprehensive full-stack personal finance application built to bridge the gap between passive tracking and intentional budgeting. Utilizing a decoupled Next.js and FastAPI architecture, the system is fully orchestrated with Docker Compose to bind local application microservices seamlessly to an isolated, persistent PostgreSQL database container.",
         image: "/projects/allocare.png",
         tags: [
+            "AWS (EC2)",
             "FastAPI (Python)",
             "Next.js",
             "Docker",
